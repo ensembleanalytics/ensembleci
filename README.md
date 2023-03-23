@@ -8,9 +8,9 @@ Timeflow is designed to help businesses improve the quality, reliability and tim
 
 This is achieved by:
 
-- Automating deployments into development and testing environments as code is developed by Data Engineers
-- Implementing a controlled development lifecycle around data transformation code
-- Improving collaboration and visibility within Data Engineering teams
+- Automating deployments into development and testing environments as code is developed by Data Engineers and committed into Git branches and pull requests;
+- Implementing a controlled development lifecycle around data transformation code which ensures that all code is tested;
+- Improving collaboration and visibility within Data Engineering teams with a current state view of project health.
 
 # Building On dbt Core
 
