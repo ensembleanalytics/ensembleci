@@ -38,7 +38,7 @@ We offer a fully managed cloud hosted version at https://timeflow.systems.  Our 
 The best way to deploy Timeflow is to use Docker.  To do so, clone this repository and run with docker-compose.
 
 ```
-git clone https://github.com/TimeflowCI/timeflow
+git clone https://github.com/TimeflowCI/timeflow.git
 docker-compose up
 ```
 
@@ -59,9 +59,9 @@ If you would like to build from source and deploy without Docker, our code base 
 Clone the following repos:
   
 ```
-git clone https://github.com/TimeflowCI/timeflow-frontend
-git clone https://github.com/TimeflowCI/timeflow-backend
-git clone https://github.com/TimeflowCI/timeflow-ci-server
+git clone https://github.com/TimeflowCI/timeflow-frontend.git
+git clone https://github.com/TimeflowCI/timeflow-backend.git
+git clone https://github.com/TimeflowCI/timeflow-ci-server.git
 ```
  
 The three components can then be started with start.sh.  
