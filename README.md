@@ -2,7 +2,7 @@
 
 Timeflow is a Continuous Integration and Continuous Delivery (CI/CD) platform designed specifically for the needs of Data Engineers.  It is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformations using SQL.
 
-![Screenshot](timeflow-screenshot.avif)
+<img src="/timeflow-screenshot.avif" width="128"/>
  
 # Why Use Timeflow?
 
