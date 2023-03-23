@@ -18,22 +18,35 @@ Though these tools are undoubtedly powerful, they are general purpose, and can r
 
 Recognising this, Timeflow has been developed specifically to solve the problem of CI/CD for Data Engineers who use dbt. This allows us to build a more opinionated, out of the box experience and a user experience that is tailored specifically for Data Engineers.
 
-# Running Timeflow
+# Running Timeflow With Docker
 
-Clone this repo.
+Clone this repo and run with docker-compose.
 
 ```
-docker-compose 
+docker-compose up
+```
+
+
+# Running In Developer Mode
+
+A single developer can run Timeflow locally to assist their dbt developer workflow.
+
+```
+docker-compose up -f docker-compose-developer-mode.yml
 ```
 
 # Building From Source
 
-Clone the following repos.
+Timeflow is split across three repositories.  
 
 ```
-
+https://github.com/TimeflowCI/timeflow-frontend
+https://github.com/TimeflowCI/timeflow-backend
+https://github.com/TimeflowCI/timeflow-ci-server
 ```
 
-```
-docker-compose
-```
+# Help & Next Steps
+
+Learn more about Timeflow at [our website](https://timeflow.systems)
+Learn more about Data Engineering at [Timeflow Academy](https://timeflow.academy)
+Join our Discord community to learn more or provide feedback.  
