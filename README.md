@@ -1,10 +1,16 @@
 # An Open Source CI/CD Platform For Data Engineers
 
-Timeflow is a Continuous Integration and Continuous Delivery platform designed specifically for the needs of Data Engineers.
+Timeflow is a Continuous Integration and Continuous Delivery platform designed specifically for the needs of Data Engineers.  It is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformations using SQL.
 
-It is designed to help businesses improve the quality, reliability and timeliness of their data pipelines.
+# Why Use Timeflow?
 
-This is achieved by improving collaboration within data teams, and by implementing an automated but controlled development lifecycle around their data transformation code.
+Timeflow is designed to help businesses improve the quality, reliability and timeliness of their data pipelines.
+
+This is achieved by:
+
+- Automating deployments into development and testing environments as code is developed by Data Engineers
+- Implementing a controlled development lifecycle around data transformation code
+- Improving collaboration and visibility within Data Engineering teams
 
 # Building On dbt Core
 
