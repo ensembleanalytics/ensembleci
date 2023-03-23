@@ -1,12 +1,15 @@
 version: "3.9"
 services:
-  web:
-    build: .
+  frontend:
+    image: "benjaminwootton81/timeflow-frontend"
     ports:
-      - "8000:5000"
-    volumes:
-      - .:/code
-    environment:
-      FLASK_DEBUG: "true"
-  redis:
-    image: "redis:alpine"
+      - "3000:3000"
+  backend:
+    image: "benjaminwootton81/timeflow-backend"
+    ports:
+      - "3001:3001"
+  ciserver:
+    image: "benjaminwootton81/timeflow-ci-server"
+    ports:
+      - "3002:3002"
+  
