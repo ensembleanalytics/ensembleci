@@ -69,6 +69,6 @@ The three components can then be started with start.sh.
 # Help & Next Steps
 
 - Learn more about Timeflow at [our website](https://timeflow.systems)
+- Join our [Discord community](https://discord.gg/hguMJkk9fX) to learn more or provide feedback.  
+- Follow the team on Twitter @WeAreTimeflow for the latest product updates
 - Learn more about Data Engineering at [Timeflow Academy](https://timeflow.academy)
-- Join our Discord community to learn more or provide feedback.  
-- Follow the team on Twitter @WeAreTimeflow
