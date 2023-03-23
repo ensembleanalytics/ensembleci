@@ -8,9 +8,9 @@ Timeflow is a Continuous Integration and Continuous Delivery (CI/CD) platform de
 
 Timeflow is designed to help Data Teams improve the quality, reliability and timeliness of their data pipelines whilst also simplifying their stack.  This is achieved by:
 
-- Automating deployments into development and testing environments as code is developed;
+- Automating deployments into development and testing environments as code is committed onto branches;
 - Implementing a controlled development lifecycle around data transformation code;
-- Ensuring that automated tests are developed and ran throughout data transformation pipelines;
+- Ensuring that automated tests are developed and ran throughout defined data transformation pipelines;
 - Improving collaboration and visibility within Data Engineering teams with a current state view of project health.
 
 # Building On dbt Core
