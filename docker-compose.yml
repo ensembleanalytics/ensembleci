@@ -4,12 +4,21 @@ services:
     image: "benjaminwootton81/timeflow-frontend"
     ports:
       - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_PREFIX=http://backend:3001/api/
+
   backend:
     image: "benjaminwootton81/timeflow-backend"
     ports:
       - "3001:3001"
+    environment:
+      - ENSEMBLE_ROOT=/Users/benjaminwootton/development/code/ensemble_root
+      - TIMEFLOW_CI_SERVER=http://localhost:3002
+
   ciserver:
     image: "benjaminwootton81/timeflow-ci-server"
     ports:
       - "3002:3002"
-  
+    environment:
+      - ENSEMBLE_ROOT=/Users/benjaminwootton/development/code/timeflow/ensemble_root/
+
