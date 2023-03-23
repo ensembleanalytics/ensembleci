@@ -6,7 +6,7 @@ Timeflow is a Continuous Integration and Continuous Delivery (CI/CD) platform de
  
 # Why Use Timeflow?
 
-Timeflow is designed to help businesses improve the quality, reliability and timeliness of their data pipelines.  This is achieved by:
+Timeflow is designed to help Data Teams improve the quality, reliability and timeliness of their data pipelines whilst also simplifying their stack.  This is achieved by:
 
 - Automating deployments into development and testing environments as code is developed;
 - Implementing a controlled development lifecycle around data transformation code;
