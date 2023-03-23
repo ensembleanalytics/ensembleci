@@ -1,11 +1,11 @@
-version: "3.9"
+version: "3.3"
 services:
-  frontend:
-    image: "benjaminwootton81/timeflow-frontend"
-    ports:
-      - "3000:3000"
-    environment:
-      - NEXT_PUBLIC_API_PREFIX=http://backend:3001/api/
+ # frontend:
+ #   image: "benjaminwootton81/timeflow-frontend"
+ #   ports:
+ #     - "3000:3000"
+ #   environment:
+ #     - NEXT_PUBLIC_API_PREFIX=http://backend:3001/api/
 
   backend:
     image: "benjaminwootton81/timeflow-backend"
