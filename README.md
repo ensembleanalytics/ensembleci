@@ -27,32 +27,26 @@ Recognising this, Timeflow has been developed specifically to solve the problem 
 
 # How To Run Timeflow
 
+There are a number of different deployment models depending on your needs.  
 
 ## Use Our Cloud Hosted Version
 
-We offer a cloud hosted version at https://timeflow.systems.  This avoids the need for any setup or configuration.
+We offer a fully managed cloud hosted version at https://timeflow.systems.  Our sample account allows you to try the application using our sample projects.
 
 ## Running Timeflow With Docker
 
-Timeflow requires Docker and Docker Compose to run.  
-
-To run the server, clone this repository and run with docker-compose.
+The best way to deploy Timeflow is to use Docker.  To do so, clone this repository and run with docker-compose.
 
 ```
+git clone https://github.com/TimeflowCI/timeflow
 docker-compose up
-```
-
-To pull the latest version, you may occasionally need to issue a pull command to bring down the latest images:
-
-```
-docker-compose pull
 ```
 
 The Timeflow frontend should then be available on port 3000.
 
 ## Running In Developer Mode
 
-A single developer can run Timeflow locally to assist with their dbt developer workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
+A single developer can run Timeflow locally and in a single user mode to assist with their dbt developer workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
 
 ```
 docker-compose up -env TIMEFLOW_ROOT=<path-to-your-dbt-project> -f docker-compose-developer-mode.yml
@@ -60,7 +54,7 @@ docker-compose up -env TIMEFLOW_ROOT=<path-to-your-dbt-project> -f docker-compos
 
 ## Building From Source
 
-If you would like to work from source or deploy without Docker, our code base is split across three publically available repositories.  
+If you would like to build from source and deploy without Docker, our code base is split across three publically available repositories.  
 
 Clone the following repos:
   
@@ -74,6 +68,7 @@ The three components can then be started with start.sh.
 
 # Help & Next Steps
 
-Learn more about Timeflow at [our website](https://timeflow.systems)
-Learn more about Data Engineering at [Timeflow Academy](https://timeflow.academy)
-Join our Discord community to learn more or provide feedback.  
+- Learn more about Timeflow at [our website](https://timeflow.systems)
+- Learn more about Data Engineering at [Timeflow Academy](https://timeflow.academy)
+- Join our Discord community to learn more or provide feedback.  
+- Follow the team on Twitter @WeAreTimeflow
