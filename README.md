@@ -23,32 +23,52 @@ Though these tools are undoubtedly powerful, they are general purpose, and can r
 
 Recognising this, Timeflow has been developed specifically to solve the problem of CI/CD for Data Engineers who use dbt. This allows us to build a more opinionated, out of the box experience and a user experience that is tailored specifically for Data Engineers.
 
-# Running Timeflow With Docker
+# How To Run Timeflow
 
-Clone this repo and run with docker-compose.
+
+## Use Our Cloud Hosted Version
+
+We offer a cloud hosted version at https://timeflow.systems.  This avoids the need for any setup or configuration.
+
+## Running Timeflow With Docker
+
+Timeflow requires Docker and Docker Compose to run.  
+
+To run the server, clone this repository and run with docker-compose.
 
 ```
 docker-compose up
 ```
 
-
-# Running In Developer Mode
-
-A single developer can run Timeflow locally to assist their dbt developer workflow.
+To pull the latest version, you may occasionally need to issue a pull command to bring down the latest images:
 
 ```
-docker-compose up -f docker-compose-developer-mode.yml
+docker-compose pull
 ```
 
-# Building From Source
+The Timeflow frontend should then be available on port 3000.
 
-Timeflow is split across three repositories.  
+## Running In Developer Mode
+
+A single developer can run Timeflow locally to assist with their dbt developer workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
 
 ```
-https://github.com/TimeflowCI/timeflow-frontend
-https://github.com/TimeflowCI/timeflow-backend
-https://github.com/TimeflowCI/timeflow-ci-server
+docker-compose up -env TIMEFLOW_ROOT=<path-to-your-dbt-project> -f docker-compose-developer-mode.yml
 ```
+
+## Building From Source
+
+If you would like to work from source or deploy without Docker, our code base is split across three publically available repositories.  
+
+Clone the following repos:
+  
+```
+git clone https://github.com/TimeflowCI/timeflow-frontend
+git clone https://github.com/TimeflowCI/timeflow-backend
+git clone https://github.com/TimeflowCI/timeflow-ci-server
+```
+ 
+The three components can then be started with start.sh.  
 
 # Help & Next Steps
 
