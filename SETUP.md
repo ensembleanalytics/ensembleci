@@ -3,6 +3,10 @@
 This document describes four options for deploying Timeflow.
 
 
+## Timeflow Cloud
+  
+We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.
+
 ## Running With Docker
 
 The reccomended route is to install Timeflow using Docker.
@@ -40,12 +44,6 @@ Start the application.
 docker-compose up 
 ```
 
-
-## Timeflow Cloud
-  
-We offer a managed version of Timeflow which is accessible at https://app.timeflow.systems.
-  
- 
 ## Developer Mode
 
 A single developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
@@ -53,6 +51,3 @@ A single developer can run Timeflow locally and in a single user mode to assist 
 ```
 docker-compose up -env TIMEFLOW_ROOT=<path-to-your-dbt-project> -f docker-compose-developer-mode.yml
 ```
-  
-
-  
