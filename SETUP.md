@@ -32,14 +32,20 @@ Clone this repository.
 git clone https://github.com/TimeflowCI/timeflow.git
 ```
 
-### Set Keys In The Docker Compose File
+### Set Details In The .env File
 
-Edit the docker-compose.yml file and the Github client keys that were created above.
+Copy the example .env file:
 
 ```
-- NEXT_PUBLIC_GITHUB_CLIENT_ID=cc7666ffbafb59c4XXXX
-- GITHUB_CLIENT_ID=cc7666ffbafb59c4XXXX
-- GITHUB_CLIENT_SECRET=377c0ae980a454082c7c4992968f56e881c9XXXX
+cp .env.example .env
+```
+
+And set the values correctly using your own Github keys:
+
+```
+SERVER_IP_ADDRESS=123.123.123.123
+GITHUB_CLIENT_ID=cc7666ffbafb59c4XXXX
+GITHUB_CLIENT_SECRET=377c0ae980a454082c7c4992968f56e881c9XXXX
 ```
 
 ### Run The Application 
