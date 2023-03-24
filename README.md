@@ -29,42 +29,7 @@ Recognising this, Timeflow has been developed specifically to solve the problem 
 
 There are a number of different deployment models depending on your needs.  
 
-## Use Our Cloud Hosted Version
-
-We offer a fully managed cloud hosted version at https://timeflow.systems.  Our sample account allows you to try the application using our sample projects.
-
-## Running Timeflow With Docker
-
-The best way to deploy Timeflow is to use Docker.  To do so, clone this repository and run with docker-compose.
-
-```
-git clone https://github.com/TimeflowCI/timeflow.git
-docker-compose up
-```
-
-The Timeflow frontend should then be available on port 3000.
-
-## Running In Developer Mode
-
-A single developer can run Timeflow locally and in a single user mode to assist with their dbt developer workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
-
-```
-docker-compose up -env TIMEFLOW_ROOT=<path-to-your-dbt-project> -f docker-compose-developer-mode.yml
-```
-
-## Building From Source
-
-If you would like to build from source and deploy without Docker, our code base is split across three publically available repositories.  
-
-Clone the following repos:
-  
-```
-git clone https://github.com/TimeflowCI/timeflow-frontend.git
-git clone https://github.com/TimeflowCI/timeflow-backend.git
-git clone https://github.com/TimeflowCI/timeflow-ci-server.git
-```
- 
-The three components can then be started with start.sh.  
+Please visit our [setup document](SETUP.md) for more details on how to deploy Timeflow.
 
 # Help & Next Steps
 
