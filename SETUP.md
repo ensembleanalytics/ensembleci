@@ -34,3 +34,12 @@ Edit the docker-compose.yml file and set your Github client keys.
 ```
 docker-compose up 
 ```
+
+
+# Developer Mode
+
+A single developer can run Timeflow locally and in a single user mode to assist with their dbt developer workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
+
+```
+docker-compose up -env TIMEFLOW_ROOT=<path-to-your-dbt-project> -f docker-compose-developer-mode.yml
+```
