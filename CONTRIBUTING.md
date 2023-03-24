@@ -1,8 +1,16 @@
 
 # Contributing To Timeflow
 
-This document describes how to download and run the Timeflow source code.  
+This document describes how to download, run and contribute to the Timeflow source code.  
 
+## Architecture
+
+There are three components to the Timeflow architecture:
+
+- timeflow-frontend - UI layer written in next.js; 
+- timeflow-backend - Backend APIs written in Typescript;
+- timeflow-ci-server - CI/CD logic and integration layer with Github;
+ 
 ## Codebase
 
 Our codebase is split across three publically available repositories.
