@@ -21,6 +21,9 @@ Timeflow integrates with Github in order to build your repos and branches.
 
 There is a small amount of configuration in Github to create an OAuth application.  
 
+- Visit Developer Settings
+- Visit OAuth Apps
+
 ### Clone This Repo
 
 Clone this repository.

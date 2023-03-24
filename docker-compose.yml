@@ -1,24 +1,24 @@
 version: "3.3"
 services:
   frontend:
-    #build: ../timeflow-frontend
+    build: ../timeflow-frontend
     image: benjaminwootton81/timeflow-frontend-new
     ports:
       - "3000:3000"
     environment:
       - NEXT_PUBLIC_API_PREFIX=http://backend:3001/api/
-      - NEXT_PUBLIC_GITHUB_CLIENT_ID=7125ed4d07c9867c0c74
+      - NEXT_PUBLIC_GITHUB_CLIENT_ID=cc7666ffbafb59c427d6
 
   backend:
-    #build: ../timeflow-backend
+    build: ../timeflow-backend
     image: benjaminwootton81/timeflow-backend-new
     ports:
       - "3001:3001"
     environment:
       - ENSEMBLE_ROOT=/tmp/ensemble_root
-      - TIMEFLOW_CI_SERVER=http://35.189.109.115:3002
-      -  GITHUB_CLIENT_ID=859eceb60684a4276d4c
-      -  GITHUB_CLIENT_SECRET=c1c4ec661610b9b1adaf06fdff4c93fc9f335a8f
+      - TIMEFLOW_CI_SERVER=http://94.12.185.96:3002
+      - GITHUB_CLIENT_ID=cc7666ffbafb59c427d6
+      - GITHUB_CLIENT_SECRET=377c0ae980a454082c7c4992968f56e881c94061
     volumes:
       - /tmp/ensemble_root:/tmp/ensemble_root
 
