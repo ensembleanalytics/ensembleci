@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   frontend:
-    build: ../timeflow-frontend
+    image: "benjaminwootton81/timeflow-frontend"
     ports:
       - "3000:3000"
     environment:
@@ -9,19 +9,17 @@ services:
       - NEXT_PUBLIC_GITHUB_CLIENT_ID=7125ed4d07c9867c0c74
 
   backend:
-    build: ../timeflow-backend
+    image: "benjaminwootton81/timeflow-backend"
     ports:
       - "3001:3001"
     environment:
       - ENSEMBLE_ROOT=/tmp/ensemble_root
       - TIMEFLOW_CI_SERVER=http://ciserver:3002
-      - GITHUB_CLIENT_ID=7125ed4d07c9867c0c74
-      - GITHUB_CLIENT_SECRET=c367e32cbd12bb42e4af415ef2bafd098a2d45e6
     volumes:
       - /tmp/ensemble_root:/tmp/ensemble_root
 
   ciserver:
-    build: ../timeflow-ci-server
+    image: "benjaminwootton81/timeflow-ci-server"
     ports:
       - "3002:3002"
     environment:
