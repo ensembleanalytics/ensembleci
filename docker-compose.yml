@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   frontend:
-    build: ../timeflow-frontend
+    #build: ../timeflow-frontend
     image: benjaminwootton81/timeflow-frontend-new
     ports:
       - "3000:3000"
@@ -10,7 +10,7 @@ services:
       - NEXT_PUBLIC_GITHUB_CLIENT_ID=cc7666ffbafb59c427d6
 
   backend:
-    build: ../timeflow-backend
+    #build: ../timeflow-backend
     image: benjaminwootton81/timeflow-backend-new
     ports:
       - "3001:3001"
