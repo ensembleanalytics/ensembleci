@@ -1,45 +1,58 @@
 # Timeflow Setup Instructions 
 
-This document describes how to setup Timeflow.
+This document describes four options for deploying Timeflow.
 
-## Prerequisites
 
-The easiest route is to install Timeflow using Docker.
+## Running With Docker
 
-A recent version of Docker and Docker Compose are the only pre-requisites in this case.
+The reccomended route is to install Timeflow using Docker.
 
-## Setup Your Github Application
+### Prerequisites
+
+A recent version of Docker and Docker Compose are required.  
+
+### Setup Your Github Application
 
 Timeflow integrates with Github in order to build your repos and branches.  
 
-There is a small amount of config in Github.  
+There is a small amount of configuration in Github to create an OAuth application.  
 
-## Clone This Repo
+### Clone This Repo
 
-This repository is the only one you need.
+Clone this repository.
 
 ```
 git clone https://github.com/TimeflowCI/timeflow.git
 ```
 
-## Set Keys In The Docker Compose File
+### Set Keys In The Docker Compose File
 
-Edit the docker-compose.yml file and set your Github client keys.
+Edit the docker-compose.yml file and the Github client keys that were created above.
 
 ```
 ```
 
-## Run The Application 
+### Run The Application 
+
+Start the application.
 
 ```
 docker-compose up 
 ```
 
 
-# Developer Mode
+## Timeflow Cloud
+  
+We offer a managed version of Timeflow which is accessible at https://app.timeflow.systems.
+  
+ 
+## Developer Mode
 
-A single developer can run Timeflow locally and in a single user mode to assist with their dbt developer workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
+A single developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
 
 ```
 docker-compose up -env TIMEFLOW_ROOT=<path-to-your-dbt-project> -f docker-compose-developer-mode.yml
 ```
+  
+
+  
