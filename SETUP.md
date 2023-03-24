@@ -37,11 +37,13 @@ Edit the docker-compose.yml file and the Github client keys that were created ab
 
 ### Run The Application 
 
-Start the application.
+Start the application using Docker compose.  
 
 ```
 docker-compose up 
 ```
+
+The three services should start with healthy logs.  
 
 ## Developer Mode
 
