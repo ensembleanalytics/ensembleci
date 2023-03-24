@@ -34,6 +34,9 @@ git clone https://github.com/TimeflowCI/timeflow.git
 Edit the docker-compose.yml file and the Github client keys that were created above.
 
 ```
+- NEXT_PUBLIC_GITHUB_CLIENT_ID=cc7666ffbafb59c4XXXX
+- GITHUB_CLIENT_ID=cc7666ffbafb59c4XXXX
+- GITHUB_CLIENT_SECRET=377c0ae980a454082c7c4992968f56e881c9XXXX
 ```
 
 ### Run The Application 
