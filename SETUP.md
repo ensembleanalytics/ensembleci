@@ -9,7 +9,7 @@ We offer a fully managed version of Timeflow which is accessible at https://app.
 
 ## Self Managed Deployment With Docker
 
-The reccomended route for a self managed deployment is to use Docker. 
+The recommended route for a self managed deployment is to use Docker. 
 
 ### Prerequisites
 
