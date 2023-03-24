@@ -27,9 +27,7 @@ Recognising this, Timeflow has been developed specifically to solve the problem 
 
 # How To Run Timeflow
 
-There are a number of different deployment models depending on your needs.  
-
-Please visit our [setup document](SETUP.md) for more details on how to deploy Timeflow.
+There are a number of different deployment models depending on your needs.  Please visit our [setup document](SETUP.md) for more details.
 
 # Help & Next Steps
 
