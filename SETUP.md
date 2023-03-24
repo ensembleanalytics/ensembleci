@@ -1,15 +1,14 @@
 # Timeflow Setup Instructions 
 
-This document describes four options for deploying Timeflow.
-
+This document describes three options for deploying Timeflow.
 
 ## Timeflow Cloud
   
-We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.
+We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  
 
-## Running With Docker
+## Deploying With Docker
 
-The reccomended route is to install Timeflow using Docker.
+The reccomended route for a self managed deployment is to use Docker. 
 
 ### Prerequisites
 
