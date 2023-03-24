@@ -6,7 +6,7 @@ Timeflow is a Continuous Integration and Continuous Delivery (CI/CD) platform de
  
 # Why Use Timeflow?
 
-Timeflow is designed to help Data Teams improve the quality, reliability and timeliness of their data pipelines whilst also simplifying their stack.  This is achieved by:
+Timeflow is designed to help Data Teams improve the quality, reliability and speed of their data transformation pipelines.  This is achieved by:
 
 - Automating deployments into development and testing environments as code is committed into source control;
 - Implementing a controlled development lifecycle around data transformation code;
@@ -15,9 +15,9 @@ Timeflow is designed to help Data Teams improve the quality, reliability and tim
 
 # Building On dbt Core
 
-Timeflow is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformations using SQL.
+Timeflow is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformation pipelines using SQL.
 
-Though dbt Core moves Data Engineering forward by enabling best practices such as source controlled SQL, reusable modular code and automated testing, it does not impose a development process or "path to production".
+Though dbt Core [moves Data Engineering forward](https://timeflow.systems/blog/how-dbt-enables-a-software) by enabling best practices such as source controlled SQL, reusable modular code and automated testing, it does not impose a development process or "path to production".
 
 This leaves data teams with the problem of agreeing their development workflow, and then automating it using a CI/CD platform such as Jenkins, Gitlab or Github Actions, or perhaps an orchestrator such as Airflow or Dagster.
 
