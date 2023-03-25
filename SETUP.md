@@ -4,7 +4,7 @@ This document describes four options for deploying Timeflow.
 
 ## Timeflow Cloud
   
-We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  
+We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  This avoids the need to host and operate the platform yourself.  
 
 
 ## Self Managed Deployment With Docker
