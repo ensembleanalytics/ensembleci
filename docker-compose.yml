@@ -24,7 +24,7 @@ services:
 
   ciserver:
     #   build: ../timeflow-ci-server
-    image: benjaminwootton81/timeflow-ciserver-new
+    image: benjaminwootton81/timeflow-ci-server-new
     ports:
       - "3002:3002"
     environment:
