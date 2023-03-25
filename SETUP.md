@@ -61,9 +61,21 @@ docker-compose up
 
 The three services, frontend, backend, and CI server should start with healthy logs.  
 
+### Access The Application
+
+The frontend applications should be available at http://localhost:3000.
+
+### Port Forwarding
+
+Github will call the CI server with webhooks whenever new code is checked into your monitored repos.  
+
+Depending on your setup, you may need to setup port forwarding to connect from your public facing router to the server where Timeflow is running.  
+
+
 ## Self Managed Deployment From Source
 
 If you would like to deploy from source instead of using Docker, please visit our [contributing guide](CONTRIBUTING.md) for details of how to clone and run the Timeflow repos.  
+
 
 ## Developer Mode
 
