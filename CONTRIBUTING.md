@@ -3,6 +3,10 @@
 
 This document describes how to download, run and contribute to the Timeflow source code.  
 
+## Contributions 
+
+We welcome contributions and feedback from users and developers to help move the product forward.  
+
 ## Architecture
 
 There are three components to the Timeflow architecture:
@@ -23,11 +27,21 @@ git clone https://github.com/TimeflowCI/timeflow-ci-server.git
 
 ## Running 
 
-Each of these repos has a shell script to start the relevant process:
+Each of these repos has a shell script to start the relevant process.
 
 ```
 sh startdev.sh
 ```
+
+You will also need to setup .env scripts based on the supplied .env.example scripts for each of the three repos.
+
+```
+cp .env.example .env
+```
+
+## Github Integration
+
+You will also need to setup a Git application and configure your Git keys as described in our [setup documentation](/SETUP.md).
 
 ## Language
 
@@ -35,7 +49,7 @@ Timeflow is written in Typescript and Next.js.
 
 ## CI/CD Process
 
-When pull requests are merged into the main branch, they are built by Docker Hub.  The images are exposed at the following URLs:
+We have a simple CI/CD process.  When pull requests are merged into the main branch, they are built by Docker Hub.  The images are exposed at the following URLs:
 
 ```
 https://hub.docker.com/r/benjaminwootton81/timeflow-frontend-new
