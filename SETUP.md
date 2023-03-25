@@ -19,16 +19,18 @@ A recent version of Docker and Docker Compose are required.
 
 Timeflow integrates with Github in order to build your repos and branches.  
 
-There is a small amount of configuration in Github to create an OAuth application.  
+There is a small amount of configuration in Github to enable this interaction to take place with your own account.  
 
-- Visit Developer Settings
-- Visit OAuth Apps
-- Create an App
-- Note down the Client ID and Cliend ID Secret for use in a subsequent step
+1. Visit Developer Settings
+2. Visit OAuth Apps
+3. Create an App 
+4. Note down the Client ID and Client ID Secret for use in a subsequent step
+
+Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
 
 ### Clone This Repo
 
-Clone this repository.
+The next step is to clone this repository.
 
 ```
 git clone https://github.com/TimeflowCI/timeflow.git
@@ -59,7 +61,7 @@ Start the application using Docker compose.
 docker-compose up 
 ```
 
-The three services, frontend, backend, and CI server should start with healthy logs.  
+If everything has gone well, the three services, frontend, backend, and CI server should start with healthy logs.  
 
 ### Access The Application
 
@@ -69,7 +71,7 @@ The frontend applications should be available at http://localhost:3000.
 
 Github will call the CI server with webhooks whenever new code is checked into your monitored repos.  
 
-Depending on your setup, you may need to setup port forwarding to connect from your public facing router to the server where Timeflow is running.  
+Depending on your networking setup, you may need to setup port forwarding to connect from your public facing router to the server where Timeflow is running.  
 
 
 ## Self Managed Deployment From Source
