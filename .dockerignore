@@ -1,0 +1,53 @@
+# flyctl launch added from timeflow-backend/.gitignore
+timeflow-backend/**/node_modules
+timeflow-backend/**/build
+
+# .env.production
+timeflow-backend/**/.env.development
+
+# flyctl launch added from timeflow-ci-server/.gitignore
+timeflow-ci-server/**/node_modules
+timeflow-ci-server/**/.env
+timeflow-ci-server/**/build
+timeflow-ci-server/**/.DS_Store
+
+# flyctl launch added from timeflow-frontend/.gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+timeflow-frontend/node_modules
+timeflow-frontend/.pnp
+timeflow-frontend/**/.pnp.js
+
+# testing
+timeflow-frontend/coverage
+
+# next.js
+timeflow-frontend/.next
+timeflow-frontend/out
+
+# production
+timeflow-frontend/build
+
+# misc
+timeflow-frontend/**/.DS_Store
+timeflow-frontend/**/*.pem
+
+# debug
+timeflow-frontend/**/npm-debug.log*
+timeflow-frontend/**/yarn-debug.log*
+timeflow-frontend/**/yarn-error.log*
+timeflow-frontend/**/.pnpm-debug.log*
+
+# local env files
+timeflow-frontend/**/.env*.local
+
+# vercel
+timeflow-frontend/**/.vercel
+
+# typescript
+timeflow-frontend/**/*.tsbuildinfo
+timeflow-frontend/**/next-env.d.ts
+
+timeflow-frontend/**/.env
+fly.toml
