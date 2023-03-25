@@ -1,4 +1,5 @@
 version: "3.3"
+
 services:
   frontend:
     #build: ../timeflow-frontend
@@ -23,7 +24,7 @@ services:
       - ensemble_root_volume:/tmp/ensemble_root
 
   ciserver:
-    #   build: ../timeflow-ci-server
+    #build: ../timeflow-ci-server
     image: benjaminwootton81/timeflow-ci-server-new
     ports:
       - "3002:3002"
