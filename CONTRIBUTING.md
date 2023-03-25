@@ -9,7 +9,7 @@ There are three components to the Timeflow architecture:
 
 - timeflow-frontend - UI layer written in next.js; 
 - timeflow-backend - Backend APIs written in Typescript;
-- timeflow-ci-server - CI/CD logic and integration layer with Github;
+- timeflow-ci-server - CI/CD logic and integration layer with Github.
  
 ## Codebase
 
@@ -38,13 +38,15 @@ Timeflow is written in Typescript and Next.js.
 When pull requests are merged into the main branch, they are built by Docker Hub.  The images are exposed at the following URLs:
 
 ```
-https://docker.com/hub
-https://docker.com/hub
-https://docker.com/hub
+https://hub.docker.com/r/benjaminwootton81/timeflow-frontend-new
+https://hub.docker.com/r/benjaminwootton81/timeflow-backend-new
+https://hub.docker.com/r/benjaminwootton81/timeflow-ci-server-new
 ```
 
-Timeflow users pull these images directly when starting the application with Docker Compose.  
+Public Timeflow users pull these images directly when starting the application with the Docker compose file in this repository.
 
 ## Development Team
 
-The core developers hang out on our [community Slack channel](https://wearetimeflow.slack.com/).  Please join to meet the name or with any questions or feedback.
+The core developers hang out on our [community Slack channel](https://wearetimeflow.slack.com/).  
+
+Please join to meet the team or with any questions or feedback.
