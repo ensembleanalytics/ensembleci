@@ -11,8 +11,8 @@ It is built around the open source project [dbt Core](https://github.com/dbt-lab
 Timeflow is designed to help Data Engineering Teams improve the quality, reliability and speed of their data transformation pipelines.  This is achieved by:
 
 - Automating deployments into development and testing environments as code is committed into source control;
-- Implementing a controlled development lifecycle around data transformation code;
-- Ensuring that automated tests are continually ran;
+- Implementing a controlled development lifecycle or "path to production" for data transformation code;
+- Ensuring that automated tests are continually ran and results made visible;
 - Improving collaboration and visibility within Data Engineering teams with a current state view of project and data health.
 
 # Building On dbt Core
