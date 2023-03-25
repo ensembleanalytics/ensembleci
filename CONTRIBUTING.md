@@ -33,7 +33,7 @@ sh startdev.sh
 
 Timeflow is written in Typescript and Next.js.  
 
-# CI/CD Process
+## CI/CD Process
 
 When pull requests are merged into the main branch, they are built by Docker Hub.  The images are exposed at the following URLs:
 
@@ -45,6 +45,6 @@ https://docker.com/hub
 
 Timeflow users pull these images directly when starting the application with Docker Compose.  
 
-# Development Team
+## Development Team
 
 The core developers hang out on our [community Slack channel](https://wearetimeflow.slack.com/).  Please join to meet the name or with any questions or feedback.
