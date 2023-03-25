@@ -10,9 +10,17 @@ services:
       - NEXT_PUBLIC_API_PREFIX=http://94.12.185.96:3001/api/
       - NEXT_PUBLIC_GITHUB_CLIENT_ID=7125ed4d07c9867c0c74
       - ENSEMBLE_ROOT=/tmp/ensemble_root
+<<<<<<< HEAD
       - TIMEFLOW_CI_SERVER=http://${SERVER_IP_ADDRESS}:3002
       - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
       - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
     volumes:
       - /tmp/ensemble_root:/tmp/ensemble_root
 
+=======
+      - TIMEFLOW_CI_SERVER=http://94.12.185.96:3002
+      - GITHUB_CLIENT_ID=7125ed4d07c9867c0c74
+      - GITHUB_CLIENT_SECRET=c367e32cbd12bb42e4af415ef2bafd098a2d45e6
+    volumes:
+      - /tmp/ensemble_root:/tmp/ensemble_root
+>>>>>>> 3a2472d (Change to Docker)
