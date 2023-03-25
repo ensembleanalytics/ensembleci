@@ -23,6 +23,8 @@ There is a small amount of configuration in Github to create an OAuth applicatio
 
 - Visit Developer Settings
 - Visit OAuth Apps
+- Create an App
+- Note down the Client ID and Cliend ID Secret for use in a subsequent step
 
 ### Clone This Repo
 
@@ -30,6 +32,7 @@ Clone this repository.
 
 ```
 git clone https://github.com/TimeflowCI/timeflow.git
+cd timeflow
 ```
 
 ### Set Details In The .env File
@@ -40,7 +43,7 @@ Copy the example .env file:
 cp .env.example .env
 ```
 
-And set the values correctly using your own Github keys:
+And set the values correctly using the keys saved earlier, replacing the values below.  You'll also need to set the publically accessible IP address of the server you are running on.  
 
 ```
 SERVER_IP_ADDRESS=123.123.123.123
@@ -56,7 +59,7 @@ Start the application using Docker compose.
 docker-compose up 
 ```
 
-The three services should start with healthy logs.  
+The three services, frontend, backend, and CI server should start with healthy logs.  
 
 ## Self Managed Deployment From Source
 
