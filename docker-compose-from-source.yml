@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: 
+      context: ../timeflow-frontend
+      args: 
+        NEXT_PUBLIC_API_PREFIX:
+        NEXT_PUBLIC_GITHUB_CLIENT_ID:
+   
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_PREFIX=http://backend:3001/api/
+      - NEXT_PUBLIC_GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+
+  backend:
+    build: ../timeflow-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - ENSEMBLE_ROOT=/tmp/ensemble_root
+      - TIMEFLOW_CI_SERVER=http://${SERVER_IP_ADDRESS}:3002
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
+    volumes:
+      - ensemble_root_volume:/tmp/ensemble_root
+
+  ciserver:
+    build: ../timeflow-ci-server
+    ports:
+      - "3002:3002"
+    environment:
+      - ENSEMBLE_ROOT=/tmp/ensemble_root
+    volumes:
+      - ensemble_root_volume:/tmp/ensemble_root
+
+volumes:
+  ensemble_root_volume:
