@@ -34,6 +34,7 @@ There are a number of different deployment models depending on your needs.  Plea
 # Help & Next Steps
 
 - Learn more about Timeflow at [our website](https://timeflow.systems);
-- Join our [Data Engineering Slack community](https://discord.gg/hguMJkk9fX) to ask questions or provide feedback;
+- Read our [introductory blog post](https://timeflow.systems/blog/introducing-timeflow).
+- Join our [Slack community](https://discord.gg/hguMJkk9fX) to ask questions, provide feedback; and meet other Data Engineers;
 - Follow the team on Twitter [@WeAreTimeflow](https://twitter.com/WeAreTimeflow) for the latest product updates;
 - Learn more about Data Engineering at [Timeflow Academy](https://timeflow.academy).
