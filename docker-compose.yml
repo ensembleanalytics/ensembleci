@@ -2,12 +2,13 @@ version: "3.9"
 
 services:
   frontend:
+    #image: benjaminwootton81/timeflow-frontend-new
     build: 
       context: ../timeflow-frontend
       args: 
         NEXT_PUBLIC_API_PREFIX:
         NEXT_PUBLIC_GITHUB_CLIENT_ID:
-    #image: benjaminwootton81/timeflow-frontend-new
+   
     ports:
       - "3000:3000"
     environment:
@@ -15,8 +16,8 @@ services:
       - NEXT_PUBLIC_GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
 
   backend:
-    build: ../timeflow-backend
     #image: benjaminwootton81/timeflow-backend-new
+    build: ../timeflow-backend
     ports:
       - "3001:3001"
     environment:
@@ -28,8 +29,8 @@ services:
       - ensemble_root_volume:/tmp/ensemble_root
 
   ciserver:
-    build: ../timeflow-ci-server
     #image: benjaminwootton81/timeflow-ci-server-new
+    build: ../timeflow-ci-server
     ports:
       - "3002:3002"
     environment:
