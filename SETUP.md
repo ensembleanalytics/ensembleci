@@ -1,21 +1,16 @@
 # Timeflow Setup Instructions 
 
-This document describes four options for deploying Timeflow.
-
-## Timeflow Cloud
-  
-We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  This avoids the need to host and operate the platform yourself.  
-
+This document describes the options for deploying Timeflow.
 
 ## Self Managed Deployment With Docker
 
 The recommended route for a self managed deployment is to use Docker. 
 
-### Prerequisites
+#### Prerequisites
 
 A recent version of Docker and Docker Compose are required.  
 
-### Setup Your Github Application
+#### Setup Your Github Application
 
 Timeflow integrates with Github in order to build your repos and branches.  
 
@@ -28,7 +23,7 @@ There is a small amount of configuration in Github to enable this interaction to
 
 Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
 
-### Clone This Repo
+#### Clone This Repo
 
 The next step is to clone this repository.
 
@@ -37,7 +32,7 @@ git clone https://github.com/TimeflowCI/timeflow.git
 cd timeflow
 ```
 
-### Set Details In The .env File
+#### Set Details In The .env File
 
 Copy the example .env file:
 
@@ -53,7 +48,7 @@ GITHUB_CLIENT_ID=cc7666ffbafb59c4XXXX
 GITHUB_CLIENT_SECRET=377c0ae980a454082c7c4992968f56e881c9XXXX
 ```
 
-### Run The Application 
+#### Run The Application 
 
 Start the application using Docker compose.  
 
@@ -63,15 +58,18 @@ docker-compose up
 
 If everything has gone well, the three services, frontend, backend, and CI server should start with healthy logs.  
 
-### Access The Application
+#### Access The Application
 
 The frontend applications should be available at http://localhost:3000.
 
-### Port Forwarding
+#### Port Forwarding
 
 Github will call the CI server with webhooks whenever new code is checked into your monitored repos.  
 
 Depending on your networking setup, you may need to setup port forwarding to connect from your public facing router to the server where Timeflow is running.  
+
+
+
 
 
 ## Self Managed Deployment From Source
@@ -79,10 +77,45 @@ Depending on your networking setup, you may need to setup port forwarding to con
 If you would like to deploy from source instead of using Docker, please visit our [contributing guide](CONTRIBUTING.md) for details of how to clone and run the Timeflow repos.  
 
 
-## Developer Mode
 
-A single developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  This can be started in the following way, replacing _<path-to-your-dbt-project>_ with the path to the project you would like to analyse.  
+
+## Single Developer Mode
+
+A developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  
+
+### Clone The Repository
+
+The first step is to clone this repository.
 
 ```
-docker-compose up -env TIMEFLOW_LOCAL_PRPOJECT=<path-to-your-dbt-project> -f docker-compose.yml
+git clone https://github.com/TimeflowCI/timeflow.git
+cd timeflow
 ```
+
+### Set The Environment Variable
+
+Export the following environment variable to point towards your project:
+
+```
+export TIMEFLOW_DEVELOPER_MODE_PROJECT_PATH=/path/to/your/dbt/project
+```
+
+
+Start the application using Docker compose.  
+
+```
+docker-compose up 
+```
+
+If everything has gone well, the three services, frontend, backend, and CI server should start with healthy logs.  
+
+#### Access The Application
+
+The frontend applications should be available at http://localhost:3000.
+  
+  
+  
+  
+## Timeflow Cloud
+  
+We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  This avoids the need to host and operate the platform yourself.  
