@@ -1,6 +1,11 @@
 # Timeflow Setup Instructions 
 
-This document describes the options for deploying Timeflow.
+There are four options for deploying Timeflow.
+
+[Self Managed Deployment With Docker](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-with-docker)
+[Self Managed Deployment From Source](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-from-source)
+[Single Developer Mode](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#single-developer-mode)
+[Timeflow Cloud](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#timeflow-cloud)
 
 # Self Managed Deployment With Docker
 
@@ -70,11 +75,11 @@ Depending on your networking setup, you may need to setup port forwarding to con
 
 
 
-
-
 # Self Managed Deployment From Source
 
 If you would like to deploy from source instead of using Docker, please visit our [contributing guide](CONTRIBUTING.md) for details of how to clone and run the Timeflow repos.  
+
+
 
 
 
