@@ -2,12 +2,12 @@
 
 There are four options for deploying Timeflow.
 
-[Self Managed Deployment With Docker](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-with-docker)
-[Self Managed Deployment From Source](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-from-source)
-[Single Developer Mode](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#single-developer-mode)
-[Timeflow Cloud](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#timeflow-cloud)
+- [Self Managed Deployment With Docker](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-with-docker)
+- [Self Managed Deployment From Source](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-from-source)
+- [Single Developer Mode](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#single-developer-mode)
+- [Timeflow Cloud](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#timeflow-cloud)
 
-# Self Managed Deployment With Docker
+## Self Managed Deployment With Docker
 
 The recommended route for a self managed deployment is to use Docker. 
 
@@ -75,7 +75,9 @@ Depending on your networking setup, you may need to setup port forwarding to con
 
 
 
-# Self Managed Deployment From Source
+
+
+## Self Managed Deployment From Source
 
 If you would like to deploy from source instead of using Docker, please visit our [contributing guide](CONTRIBUTING.md) for details of how to clone and run the Timeflow repos.  
 
@@ -84,7 +86,7 @@ If you would like to deploy from source instead of using Docker, please visit ou
 
 
 
-# Single Developer Mode
+## Single Developer Mode
 
 A developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  
 
@@ -120,7 +122,8 @@ The frontend applications should be available at http://localhost:3000.
   
   
 
+
   
-# Timeflow Cloud
+## Timeflow Cloud
   
 We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  This avoids the need to host and operate the platform yourself.  
