@@ -83,7 +83,7 @@ If you would like to deploy from source instead of using Docker, please visit ou
 
 A developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  
 
-### 1) Clone The Repository
+#### 1) Clone The Repository
 
 The first step is to clone this repository.
 
@@ -92,7 +92,7 @@ git clone https://github.com/TimeflowCI/timeflow.git
 cd timeflow
 ```
 
-### 2) Set The Environment Variable
+#### 2) Set The Environment Variable
 
 Export the following environment variable to point towards your project:
 
