@@ -107,7 +107,6 @@ Export the following environment variable to point towards your project:
 export TIMEFLOW_DEVELOPER_MODE_PROJECT_PATH=/path/to/your/dbt/project
 ```
 
-
 Start the application using Docker compose.  
 
 ```
@@ -120,10 +119,7 @@ If everything has gone well, the three services, frontend, backend, and CI serve
 
 The frontend applications should be available at http://localhost:3000.
   
-  
 
-
-  
 ## Timeflow Cloud
   
 We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  This avoids the need to host and operate the platform yourself.  
