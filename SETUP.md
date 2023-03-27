@@ -31,7 +31,7 @@ There is a small amount of manual configuration in Github to enable this interac
 2. Create a new app with the settings below
 5. Note down the Client ID and Client ID Secret for use in a subsequent step
 
-<img src="/oauthsetup.png" width="900"/>
+<img src="/oauthapp.png" width="900"/>
 
 Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
 
