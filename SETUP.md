@@ -21,10 +21,10 @@ Timeflow integrates with Github in order to build your repos and branches.
 
 There is a small amount of configuration in Github to enable this interaction to take place with your own account.  
 
-1. Visit Developer Settings
-2. Visit OAuth Apps
-3. Create an App 
-4. Note down the Client ID and Client ID Secret for use in a subsequent step
+1. Visit the OAuth Apps area of Developer Settings - https://github.com/settings/developers
+2. Visit OAuth Apps 
+4. Create an App with the settings below
+5. Note down the Client ID and Client ID Secret for use in a subsequent step
 
 Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
 
