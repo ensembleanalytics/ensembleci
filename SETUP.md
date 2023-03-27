@@ -7,24 +7,31 @@ There are four options for deploying Timeflow.
 - [Single Developer Mode](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#single-developer-mode)
 - [Timeflow Cloud](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#timeflow-cloud)
 
+
+
+
+
+
+
 ## Self Managed Deployment With Docker
 
 The recommended route for a self managed deployment is to use Docker. 
 
-#### 1) Prerequisites
+#### 1) Install Docker and Docker Compose
 
-A recent version of Docker and Docker Compose are required.  
+A recent version is reccomended.
 
-#### 2) Setup Your Github Application
+#### 2) Setup Your Github Side Application
 
 Timeflow integrates with Github in order to build your repos and branches.  
 
-There is a small amount of configuration in Github to enable this interaction to take place with your own account.  
+There is a small amount of manual configuration in Github to enable this interaction to take place with your own account.  
 
 1. Visit the OAuth Apps area of Developer Settings - https://github.com/settings/developers
-2. Visit OAuth Apps 
-4. Create an App with the settings below
+2. Create a new app with the settings below
 5. Note down the Client ID and Client ID Secret for use in a subsequent step
+
+<img src="/oauthsetup.png" width="900"/>
 
 Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
 
@@ -45,7 +52,7 @@ Copy the example .env file:
 cp .env.example .env
 ```
 
-And set the values correctly using the keys saved earlier, replacing the values below.  You'll also need to set the publically accessible IP address of the server you are running on.  
+Edit the .env file and set the values correctly using the keys saved earlier, replacing the values below.  You'll also need to set the publically accessible IP address of the server you are running on.  
 
 ```
 SERVER_IP_ADDRESS=123.123.123.123
