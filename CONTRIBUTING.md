@@ -25,19 +25,21 @@ git clone https://github.com/TimeflowCI/timeflow-backend.git
 git clone https://github.com/TimeflowCI/timeflow-ci-server.git
 ```
 
-## Running 
-
-Each of these repos has a shell script to start the relevant process.
-
-```
-sh startdev.sh
-```
+## Configuring Environment Variables 
 
 You will also need to setup .env scripts based on the supplied .env.example scripts for each of the three repos.
 
 ```
 cp .env.example .env
 ```
+
+## Starting Timeflow 
+
+Each of the three repositories contains a shell script to start the relevant process.
+
+```
+sh start.sh
+``
 
 ## Github Integration
 
@@ -61,6 +63,4 @@ Public Timeflow users pull these images directly when starting the application w
 
 ## Development Team
 
-The core developers hang out on our [community Slack channel](https://wearetimeflow.slack.com/).  
-
-Please join to meet the team or with any questions or feedback.
+The core developers hang out on our [community Slack channel](https://wearetimeflow.slack.com/).  Please join to meet the team or with any questions or feedback.
