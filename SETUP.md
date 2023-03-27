@@ -6,11 +6,11 @@ This document describes the options for deploying Timeflow.
 
 The recommended route for a self managed deployment is to use Docker. 
 
-#### Prerequisites
+#### 1) Prerequisites
 
 A recent version of Docker and Docker Compose are required.  
 
-#### Setup Your Github Application
+#### 2) Setup Your Github Application
 
 Timeflow integrates with Github in order to build your repos and branches.  
 
@@ -23,7 +23,7 @@ There is a small amount of configuration in Github to enable this interaction to
 
 Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
 
-#### Clone This Repo
+#### 3) Clone This Repo
 
 The next step is to clone this repository.
 
@@ -32,7 +32,7 @@ git clone https://github.com/TimeflowCI/timeflow.git
 cd timeflow
 ```
 
-#### Set Details In The .env File
+#### 4) Set Details In The .env File
 
 Copy the example .env file:
 
@@ -48,7 +48,7 @@ GITHUB_CLIENT_ID=cc7666ffbafb59c4XXXX
 GITHUB_CLIENT_SECRET=377c0ae980a454082c7c4992968f56e881c9XXXX
 ```
 
-#### Run The Application 
+#### 5) Run The Application 
 
 Start the application using Docker compose.  
 
@@ -58,11 +58,11 @@ docker-compose up
 
 If everything has gone well, the three services, frontend, backend, and CI server should start with healthy logs.  
 
-#### Access The Application
+#### 6) Access The Application
 
 The frontend applications should be available at http://localhost:3000.
 
-#### Port Forwarding
+#### 7) Port Forwarding
 
 Github will call the CI server with webhooks whenever new code is checked into your monitored repos.  
 
@@ -83,7 +83,7 @@ If you would like to deploy from source instead of using Docker, please visit ou
 
 A developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  
 
-### Clone The Repository
+### 1) Clone The Repository
 
 The first step is to clone this repository.
 
@@ -92,7 +92,7 @@ git clone https://github.com/TimeflowCI/timeflow.git
 cd timeflow
 ```
 
-### Set The Environment Variable
+### 2) Set The Environment Variable
 
 Export the following environment variable to point towards your project:
 
@@ -109,12 +109,12 @@ docker-compose up
 
 If everything has gone well, the three services, frontend, backend, and CI server should start with healthy logs.  
 
-#### Access The Application
+#### 3) Access The Application
 
 The frontend applications should be available at http://localhost:3000.
   
   
-  
+
   
 ## Timeflow Cloud
   
