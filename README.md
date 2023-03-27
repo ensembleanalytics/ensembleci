@@ -1,4 +1,4 @@
-# A CI/CD Platform For Data Engineers
+# A CI/CD Platform For Data Engineers Who Use dbt
 
 Timeflow is an Open Source Continuous Integration and Continuous Delivery (CI/CD) platform designed specifically for the needs of Data Engineers.  
 
