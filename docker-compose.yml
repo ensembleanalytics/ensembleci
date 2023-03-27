@@ -13,6 +13,8 @@ services:
     environment:
       - NEXT_PUBLIC_API_PREFIX=http://backend:3001/api/
       - NEXT_PUBLIC_GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+      - TIMEFLOW_DEVELOPER_MODE_PROJECT_PATH=${TIMEFLOW_DEVELOPER_MODE_PROJECT_PATH}
+
 
   backend:
     image: benjaminwootton81/timeflow-backend-new
