@@ -29,9 +29,10 @@ There is a small amount of manual configuration in Github to enable this interac
 
 1. Visit the OAuth Apps area of Developer Settings - https://github.com/settings/developers
 2. Create a new app with the settings below, substituting in the publically accessible IP which you will use to host Timeflow
-<center><img src="/oauthapp.png" width="900"/></center>
 3. Register your app
 4. Note down the Client ID and Client ID Secret for use in a subsequent step
+
+<center><img src="/oauthapp.png" width="900"/></center>
 
 Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
 
