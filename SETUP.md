@@ -19,7 +19,7 @@ The recommended route for a self managed deployment is to use Docker.
 
 #### 1) Install Docker and Docker Compose
 
-A recent version is reccomended.
+A recent version is recomended.   
 
 #### 2) Setup Your Github Side Application
 
