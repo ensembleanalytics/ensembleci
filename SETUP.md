@@ -2,7 +2,7 @@
 
 This document describes the options for deploying Timeflow.
 
-## Self Managed Deployment With Docker
+# Self Managed Deployment With Docker
 
 The recommended route for a self managed deployment is to use Docker. 
 
@@ -72,14 +72,14 @@ Depending on your networking setup, you may need to setup port forwarding to con
 
 
 
-## Self Managed Deployment From Source
+# Self Managed Deployment From Source
 
 If you would like to deploy from source instead of using Docker, please visit our [contributing guide](CONTRIBUTING.md) for details of how to clone and run the Timeflow repos.  
 
 
 
 
-## Single Developer Mode
+# Single Developer Mode
 
 A developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  
 
@@ -116,6 +116,6 @@ The frontend applications should be available at http://localhost:3000.
   
 
   
-## Timeflow Cloud
+# Timeflow Cloud
   
 We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  This avoids the need to host and operate the platform yourself.  
