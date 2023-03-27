@@ -8,7 +8,6 @@ services:
       args: 
         NEXT_PUBLIC_API_PREFIX:
         NEXT_PUBLIC_GITHUB_CLIENT_ID:
-   
     ports:
       - "3000:3000"
     environment:
@@ -35,6 +34,8 @@ services:
       - "3002:3002"
     environment:
       - ENSEMBLE_ROOT=/tmp/ensemble_root
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
     volumes:
       - ensemble_root_volume:/tmp/ensemble_root
 
