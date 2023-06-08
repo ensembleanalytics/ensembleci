@@ -1,14 +1,14 @@
 # A CI/CD Platform For Data Engineers Who Use dbt
 
-[Timeflow](https://timeflow.systems) is an Open Source Continuous Integration and Continuous Delivery (CI/CD) platform designed specifically for the needs of Data Engineers.  
+[Ensemble CI](https://ensembledata.io/product) is an Open Source Continuous Integration and Continuous Delivery (CI/CD) platform designed specifically for the needs of Data Engineers.  
 
 It is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformation pipelines using SQL.
   
 <img src="/screenshots/screenshot.png" width="900"/>
  
-# Why Use Timeflow?
+# Why Use Ensemble CI?
 
-Timeflow is designed to help Data Engineering Teams improve the quality, reliability and speed of their data transformation pipelines.  This is achieved by:
+Ensemble CI is designed to help Data Engineering Teams improve the quality, reliability and speed of their data transformation pipelines.  This is achieved by:
 
 - Automating deployments into development and testing environments as code is committed into source control;
 - Implementing a controlled development lifecycle or "path to production" for data transformation code;
@@ -17,7 +17,7 @@ Timeflow is designed to help Data Engineering Teams improve the quality, reliabi
 
 # Building On dbt Core
 
-Timeflow is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformation pipelines using SQL.
+Ensemble CI is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformation pipelines using SQL.
 
 Though dbt Core [moves Data Engineering forward](https://timeflow.systems/blog/how-dbt-enables-a-software) by enabling best practices such as source controlled SQL, reusable modular code and automated testing, it does not impose a development process or "path to production".
 
@@ -33,8 +33,8 @@ There are a number of different deployment models depending on your needs.  Plea
 
 # Help & Next Steps
 
-- Learn more about Timeflow at [our website](https://timeflow.systems);
-- Read our [introductory blog post](https://timeflow.systems/blog/introducing-timeflow);
-- Join our [Slack community](https://discord.gg/hguMJkk9fX) to ask questions, provide feedback; and meet other Data Engineers;
-- Follow the team on Twitter [@WeAreTimeflow](https://twitter.com/WeAreTimeflow) for the latest product updates;
-- Learn more about Data Engineering at [Timeflow Academy](https://timeflow.academy).
+- Learn more about Timeflow at [our website](https://ensembledata.io);
+- Read our [introductory blog post](https://ensembledata.io/blog/introducing-timeflow);
+- Join our [Discord community](https://discord.gg/hguMJkk9fX) to ask questions, provide feedback; and meet other Data Engineers;
+- Follow the team on Twitter [@EnsembleData](https://twitter.com/EnsembleData) for the latest product updates;
+- Learn more about Data Engineering at [Ensemble Academy](https://ensembledata.io).
