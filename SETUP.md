@@ -1,17 +1,10 @@
-# Timeflow Setup Instructions 
+# Ensemble CI Setup Instructions 
 
-There are four options for deploying Timeflow.
+There are four options for deploying Ensemble CI.
 
-- [Self Managed Deployment With Docker](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-with-docker)
-- [Self Managed Deployment From Source](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#self-managed-deployment-from-source)
-- [Single Developer Mode](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#single-developer-mode)
-- [Timeflow Cloud](https://github.com/TimeflowCI/timeflow/blob/main/SETUP.md#timeflow-cloud)
-
-
-
-
-
-
+- [Self Managed Deployment With Docker](https://github.com/WeAreEnsemble/ensembleci/blob/main/SETUP.md#self-managed-deployment-with-docker)
+- [Self Managed Deployment From Source](https://github.com/WeAreEnsemble/ensembleci/blob/main/SETUP.md#self-managed-deployment-from-source)
+- [Single Developer Mode](https://github.com/WeAreEnsemble/ensembleci/blob/main/SETUP.md#single-developer-mode)
 
 ## Self Managed Deployment With Docker
 
@@ -23,26 +16,26 @@ A recent version is recomended.
 
 #### 2) Setup Your Github Side Application
 
-Timeflow integrates with Github in order to build your repos and branches.  
+Ensemble CI integrates with Github in order to build your repos and branches.  
 
 There is a small amount of manual configuration in Github to enable this interaction to take place with your own account.  
 
 1. Visit the OAuth Apps area of Developer Settings - https://github.com/settings/developers
-2. Create a new app with the settings below, substituting in the publically accessible IP which you will use to host Timeflow
+2. Create a new app with the settings below, substituting in the publically accessible IP which you will use to host Ensemble CI
 3. Register your app
 4. Note down the Client ID and Client ID Secret for use in a subsequent step
 
 <center><img src="/screenshots/oauthapp.png" width="900"/></center>
 
-Timeflow will interact with this application, meaning that you have no dependence on any centralised service. 
+Ensemble CI will interact with this application, meaning that you have no dependence on any centralised service. 
 
 #### 3) Clone This Repo
 
 The next step is to clone this repository.
 
 ```
-git clone https://github.com/TimeflowCI/timeflow.git
-cd timeflow
+git clone https://github.com/WeAreEnsemble/ensembleci.git
+cd ensembleci
 ```
 
 #### 4) Set Details In The .env File
@@ -79,32 +72,23 @@ The frontend applications should be available at http://localhost:3000.
 
 Github will call the CI server with webhooks whenever new code is checked into your monitored repos.  
 
-Depending on your networking setup, you may need to setup port forwarding to connect from your public facing router to the server where Timeflow is running.  
-
-
-
-
+Depending on your networking setup, you may need to setup port forwarding to connect from your public facing router to the server where Ensemble CI is running.  
 
 ## Self Managed Deployment From Source
 
-If you would like to deploy from source instead of using Docker, please visit our [contributing guide](CONTRIBUTING.md) for details of how to clone and run the Timeflow repos.  
-
-
-
-
-
+If you would like to deploy from source instead of using Docker, please visit our [contributing guide](CONTRIBUTING.md) for details of how to clone and run the Ensemble CI repos.  
 
 ## Single Developer Mode
 
-A developer can run Timeflow locally and in a single user mode to assist with their dbt development workflow.  
+A developer can run Ensemble CI locally and in a single user mode to assist with their dbt development workflow.  
 
 #### 1) Clone The Repository
 
 The first step is to clone this repository.
 
 ```
-git clone https://github.com/TimeflowCI/timeflow.git
-cd timeflow
+git clone https://github.com/WeAreEnsemble/ensembleci.git
+cd ensembleci
 ```
 
 #### 2) Set The Environment Variable
@@ -112,7 +96,7 @@ cd timeflow
 Export the following environment variable to point towards your project:
 
 ```
-export TIMEFLOW_DEVELOPER_MODE_PROJECT_PATH=/path/to/your/dbt/project
+export ENSEMBLECI_DEVELOPER_MODE_PROJECT_PATH=/path/to/your/dbt/project
 ```
 
 Start the application using Docker compose.  
@@ -127,7 +111,6 @@ If everything has gone well, the three services, frontend, backend, and CI serve
 
 The frontend applications should be available at http://localhost:3000.
   
-
-## Timeflow Cloud
+## Ensemble Cloud
   
-We offer a fully managed version of Timeflow which is accessible at https://app.timeflow.systems.  This avoids the need to host and operate the platform yourself.  
+We offer a fully managed version of Ensemble CI which is accessible at https://app.ensembledata.io.  This avoids the need to host and operate the platform yourself.  
