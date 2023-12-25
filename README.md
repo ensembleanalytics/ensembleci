@@ -1,6 +1,6 @@
 # A CI/CD Platform For Data Engineers Who Use dbt
 
-[Ensemble CI](https://ensembledata.io/product) is an Open Source Continuous Integration and Continuous Delivery (CI/CD) platform designed specifically for the needs of Data Engineers.  
+[Ensemble CI](https://ensembleanalytics.io) is an Open Source Continuous Integration and Continuous Delivery (CI/CD) platform designed specifically for the needs of Data Engineers.  
 
 It is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformation pipelines using SQL.
   
@@ -19,7 +19,7 @@ Ensemble CI is designed to help Data Engineering Teams improve the quality, reli
 
 Ensemble CI is built around the open source project [dbt Core](https://github.com/dbt-labs/dbt-core), a new but rapidly adopted tool that is used for defining and executing data transformation pipelines using SQL.
 
-Though dbt Core [moves Data Engineering forward](https://ensembledata.io/blog/how-dbt-enables-a-software) by enabling best practices such as source controlled SQL, reusable modular code and automated testing, it does not impose a development process or "path to production".
+Though dbt Core [moves Data Engineering forward](https://ensembleanalytics.io/blog/how-dbt-enables-a-software) by enabling best practices such as source controlled SQL, reusable modular code and automated testing, it does not impose a development process or "path to production".
 
 This leaves data teams with the problem of agreeing their development workflow, and then automating it using a CI/CD platform such as Jenkins, Gitlab or Github Actions, or perhaps an orchestrator such as Airflow or Dagster.
 
@@ -33,8 +33,6 @@ There are a number of different deployment models depending on your needs.  Plea
 
 # Help & Next Steps
 
-- Learn more about Ensemble CI at [our website](https://ensembledata.io);
-- Read our [introductory blog post](https://ensembledata.io/blog/introducing-ensemble-ci);
-- Join our [Discord community](https://discord.gg/hguMJkk9fX) to ask questions, provide feedback; and meet other Data Engineers;
-- Follow the team on Twitter [@EnsembleData](https://twitter.com/EnsembleData) for the latest product updates;
-- Learn more about Data Engineering at [Ensemble Academy](https://ensembledata.io).
+- Learn more about Ensemble CI at [our website](https://ensembleanalytics.io);
+- Read our [introductory blog post](https://ensembleanalytics.io/blog/introducing-ensemble-ci);
+- Follow the team on Twitter [@we_are_ensemble](https://twitter.com/we_are_ensemble) for the latest product updates;
